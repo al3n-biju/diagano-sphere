@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DiagnoSphere - Virtual Patient Chat</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="chat-container">
+    <h2>DiagnoSphere - Your Virtual Consulting Space</h2>
+    <div class="case-select">
+      <label for="case_id">Select Patient:</label>
+      <select id="case_id">
+        <option value="anna">Anna</option>
+        <option value="raj">Raj</option>
+        <option value="sara">Sara</option>
+      </select>
+      <button id="switch-patient">Switch</button>
+    </div>
+
+    <div class="chat-box" id="chat-box"></div>
+
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required/>
+      <button type="submit">Send</button>
+      <button type="button" id="voice-btn">🎤</button>
+    </form>
+
+    <div class="history-tab">
+      <h3>Chat History</h3>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
